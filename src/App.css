@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 
+.active {
+  @apply bg-[#16405B] text-white;
+}
+
+@tailwind utilities;
+
 @layer base {
   body {
     @apply font-barlow text-primary;
@@ -24,14 +30,12 @@
     @apply bg-primary rounded-md shadow-md shadow-primary relative overflow-hidden cursor-pointer hover:shadow-lg hover:shadow-primary hover:translate-y-[-1px] transition ease-linear;
   }
   .badge {
-    @apply flex justify-between items-center bg-cyan-50 rounded-md absolute bottom-4 right-2 p-2 min-w-[25%];
+    @apply flex justify-between items-center bg-cyan-50 rounded-md absolute top-2 left-2 p-[6px] min-w-[24%] shadow;
   }
-  .active {
-    @apply bg-primary text-white;
+  .input {
+    @apply bg-transparent border-2 border-primary text-primary text-xl rounded-lg block w-full pl-12 p-[8px] pr-8 placeholder:text-[#16405b8f];
   }
-}
-
-.active {
-  background: #16405B;
-  color: #fff;
+  .modal-search {
+    @apply absolute top-[55px] left-0 right-0 bg-cyan-50 shadow-3xl rounded-lg z-50
+  }
 }

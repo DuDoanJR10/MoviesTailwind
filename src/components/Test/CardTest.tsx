@@ -1,7 +1,7 @@
 import { BiTime } from 'react-icons/bi'
-import { Movie } from './dataMovies'
+import { Movie } from '../Trending/dataMovies'
 
-const MovieCard = ({ movie }: {movie: Movie}) => {
+const CardTest = ({ movie }: {movie: Movie}) => {
     const { src, title, main, runtime } = movie
     return (
         <div className='card'>
@@ -18,4 +18,4 @@ const MovieCard = ({ movie }: {movie: Movie}) => {
     )
 }
 
-export default MovieCard
+export default CardTest

@@ -40,7 +40,7 @@ const InputSearch = () => {
         <div onClick={() => setModalOpen(true)} className='modal-search'>
           <ul className='py-4 text-xl'>
             <ItemSearch search="Uzumaki Naruto" />
-            <ItemSearch search="Người Nhện không có nhà" />
+            <ItemSearch search="Người Nhện không còn nhà" />
             <ItemSearch search="Cristiano Ronaldo" />
             <ItemSearch search="Manchester United" />
             <ItemSearch search="Uzumaki Boruto" />

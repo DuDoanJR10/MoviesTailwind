@@ -17,7 +17,7 @@ const Trending = () => {
 
   return (
     <>
-        <h3 className='border-b border-primary mt-12 mb-6 pb-4'>Trending</h3>
+        <h3 className='border-b border-primary mt-[20px] mb-6 pb-4'>Trending</h3>
         <div className='grid flex-wrap grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-12'>
             {MOVIES_DATA.map((movie, index) => <MovieCard key={index} movie={movie} />)}
         </div>

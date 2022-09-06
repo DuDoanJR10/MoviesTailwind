@@ -1,8 +1,17 @@
 @tailwind base;
 @tailwind components;
 
+
 .active {
   @apply bg-[#16405B] text-white;
+}
+
+.active-slide {
+  @apply bg-red-500 !important;
+}
+
+.input-form:focus ~ span {
+  @apply w-full
 }
 
 @tailwind utilities;
@@ -37,5 +46,8 @@
   }
   .modal-search {
     @apply absolute top-[55px] left-0 right-0 bg-cyan-50 shadow-3xl rounded-lg z-50
+  }
+  .arrow-slide-slick {
+    @apply flex items-center justify-center absolute cursor-pointer h-[32px] w-[32px] top-[50%] translate-y-[-50%] z-[5] bg-white rounded-full shadow-primary shadow-arrow;
   }
 }

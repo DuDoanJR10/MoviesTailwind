@@ -7,7 +7,7 @@ const Movies = () => {
       <div className='flex md:justify-end justify-center'>
         <AuthButtons />
       </div>
-      <h1 className='mt-6 text-cyan-900'># Welcome Movies</h1>
+      
       <Trending />
     </>
   )

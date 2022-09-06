@@ -7,5 +7,5 @@ export const items = [
     { label: 'Movies', icon: <BiMoviePlay className='md:mr-2' size={defaultIconSize}/>, to: '/movies'},
     { label: 'About', icon: <BiInfoCircle className='md:mr-2' size={defaultIconSize}/>, to: '/about'},
     { label: 'Contact', icon: <BiUserCircle className='md:mr-2' size={defaultIconSize}/>, to: '/contact'},
-    { label: 'Test', icon: <BiFootball className='md:mr-2' size={defaultIconSize}/>, to: '/test'},
+    { label: 'Slide', icon: <BiFootball className='md:mr-2' size={defaultIconSize}/>, to: '/slide'},
 ]

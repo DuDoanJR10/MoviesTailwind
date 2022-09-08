@@ -47,13 +47,15 @@ const SlideSlick = () => {
     ),
   };
   return (
-    <Slider className="relative" {...settings}>
-      {dataSlick.map((slick, index) => (
-        <div key={index} className="rounded-xl h-[400px] overflow-hidden">
-          <img className="w-full h-full object-cover" alt={slick.alt} src={slick.src} />
-        </div>
-      ))}
-    </Slider>
+    <div className="rounded-lg">
+      <Slider className="relative" {...settings}>
+        {dataSlick.map((slick, index) => (
+          <div key={index} className="rounded-xl h-[400px] overflow-hidden">
+            <img className="w-full h-full object-cover" alt={slick.alt} src={slick.src} />
+          </div>
+        ))}
+      </Slider>
+    </div>
   )
 }
 

@@ -1,53 +1,64 @@
 @tailwind base;
-@tailwind components;
 
-
-.active {
-  @apply bg-[#16405B] text-white;
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
 }
 
-.active-slide {
-  @apply bg-red-500 !important;
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #939393;
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+@tailwind components;
+
+.active {
+    @apply bg-[#16405B] text-white;
 }
 
 .input-form:focus ~ span {
-  @apply w-full
+    @apply w-full;
 }
 
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply font-barlow text-primary;
-  }
-  h1 {
-    @apply text-5xl font-bold;
-  }
-  h3 {
-    @apply text-3xl;
-  }
-  h4 {
-    @apply text-2xl;
-  }
+    body {
+        @apply font-barlow text-primary;
+    }
+    h1 {
+        @apply text-5xl font-bold;
+    }
+    h3 {
+        @apply text-3xl;
+    }
+    h4 {
+        @apply text-2xl;
+    }
 }
 
 @layer components {
-  .btn {
-    @apply border-2 border-primary px-4 py-2 rounded uppercase text-xl font-semibold cursor-pointer hover:bg-primary hover:text-white;
-  }
-  .card {
-    @apply bg-primary rounded-md shadow-md shadow-primary relative overflow-hidden cursor-pointer hover:shadow-lg hover:shadow-primary hover:translate-y-[-1px] transition ease-linear;
-  }
-  .badge {
-    @apply flex justify-between items-center bg-cyan-50 rounded-md absolute top-2 left-2 p-[6px] min-w-[24%] shadow;
-  }
-  .input {
-    @apply bg-transparent border-2 border-primary text-primary text-xl rounded-lg block w-full pl-12 p-[8px] pr-8 placeholder:text-[#16405b8f];
-  }
-  .modal-search {
-    @apply absolute top-[55px] left-0 right-0 bg-cyan-50 shadow-3xl rounded-lg z-50
-  }
-  .arrow-slide-slick {
-    @apply flex items-center justify-center absolute cursor-pointer h-[32px] w-[32px] top-[50%] translate-y-[-50%] z-[5] bg-white rounded-full shadow-primary shadow-arrow;
-  }
+    .btn {
+        @apply border-2 border-primary px-4 py-2 rounded uppercase text-xl font-semibold cursor-pointer hover:bg-primary hover:text-white;
+    }
+    .card {
+        @apply bg-primary rounded-md shadow-md shadow-primary relative overflow-hidden cursor-pointer hover:shadow-lg hover:shadow-primary hover:translate-y-[-1px] transition ease-linear;
+    }
+    .badge {
+        @apply flex justify-between items-center bg-cyan-50 rounded-md absolute top-2 left-2 py-[3px] px-[4px] min-w-[24%] shadow;
+    }
+    .input {
+        @apply bg-transparent border-2 border-primary text-primary text-xl rounded-lg block w-full pl-12 p-[8px] pr-8 placeholder:text-[#16405b8f];
+    }
+    .modal-search {
+        @apply absolute top-[55px] left-0 right-0 bg-cyan-50 shadow-3xl rounded-lg z-50;
+    }
+    .icon-footer {
+        @apply relative mx-[6px] mb-[16px] border-[2px] border-white p-[10px] rounded-[50%] hover:bg-white hover:text-primary transition-all duration-300;
+    }
 }

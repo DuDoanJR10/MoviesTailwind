@@ -1,11 +1,14 @@
-import { BiFootball, BiHomeAlt, BiInfoCircle, BiMoviePlay, BiUserCircle } from "react-icons/bi";
+import { BiHomeAlt, BiInfoCircle, BiMoviePlay, BiUserCircle } from 'react-icons/bi';
 
 export const defaultIconSize = '1.875rem';
 
 export const items = [
-    { label: 'Home', icon: <BiHomeAlt className='md:mr-2' size={defaultIconSize}/>, to: '/'},
-    { label: 'Movies', icon: <BiMoviePlay className='md:mr-2' size={defaultIconSize}/>, to: '/movies'},
-    { label: 'About', icon: <BiInfoCircle className='md:mr-2' size={defaultIconSize}/>, to: '/about'},
-    { label: 'Contact', icon: <BiUserCircle className='md:mr-2' size={defaultIconSize}/>, to: '/contact'},
-    { label: 'Slide', icon: <BiFootball className='md:mr-2' size={defaultIconSize}/>, to: '/slide'},
-]
+    { label: 'Trang Chủ', icon: <BiHomeAlt className="md:mr-2" size={defaultIconSize} />, to: '/' },
+    { label: 'Danh mục', icon: <BiMoviePlay className="md:mr-2" size={defaultIconSize} />, to: '/category' },
+    {
+        label: 'Vật tư và thiết bị y tế',
+        icon: <BiInfoCircle className="md:mr-2" size={defaultIconSize} />,
+        to: '/items',
+    },
+    { label: 'Tài khoản', icon: <BiUserCircle className="md:mr-2" size={defaultIconSize} />, to: '/account' },
+];

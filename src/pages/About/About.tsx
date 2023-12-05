@@ -1,12 +1,11 @@
-import SlideSlick from "../../components/Slide/SlideSlick"
+import SlideCollection from '../../components/Slide/SlideCollection';
 
 const About = () => {
-  
-  return (
-    <div className="text-6xl text-center min-h-screen">
-      <SlideSlick />
-    </div>
-  )
-}
+    return (
+        <div className="about">
+            <SlideCollection />
+        </div>
+    );
+};
 
-export default About
+export default About;
